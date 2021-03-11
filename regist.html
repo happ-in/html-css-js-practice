@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>regist</title>
+<style>
+    ul {
+        margin: 3px;
+        list-style: none;
+    }
+    ul > li {
+        margin: 5px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"] {
+        height: auto;
+        line-height: normal;
+        padding: .5em .5em;;
+    }
+    fieldset {
+        margin-bottom: 10px;
+        width: 500px;
+    }
+    legend {
+        font-weight: bold;
+        font-size: x-large;
+    }
+</style>
+</head>
+
+<body>
+    <h2>회원가입</h2>
+    <fieldset>
+        <legend>기본정보</legend>
+        <ul>
+            <li>
+                <label>아이디: </label>
+                <input type="text" placeholder="ID" minlength="6"> 
+            </li>
+            <li>
+                <label>비밀번호: </label>
+                <input type="password" placeholder="PassWord" minlength="8"> 
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>부가정보</legend>
+        <ul>
+            <li>
+                <label>성별: </label>
+                <input type="radio" name="gender" value="m">남
+                <input type="radio" name="gender" value="f" checked>여
+            </li>
+            <li>
+                <label>사용 언어 선택</label>
+            </li>
+            <li>
+                <input type="checkbox" name="skill" value="Java">자바
+                <input type="checkbox" name="skill" value="Javascript">자바스크립트
+                <input type="checkbox" name="skill" value="C">C/C++
+                <input type="checkbox" name="skill" value="python">파이썬
+            </li>
+            <li>
+                <label>경력</label>
+                <select>
+                    <option selected>신입</option>
+                    <option>1년 이하</option>
+                    <option>3년 이하</option>
+                    <option>5년 이하</option>
+                    <option>5년 이상</option>
+                </select>
+            </li>
+        </ul>
+    </fieldset>
+
+    <from>
+        <input type="submit" value="가입">
+        <input type="reset" value="취소">
+    </from>
+</body>
+</html>
